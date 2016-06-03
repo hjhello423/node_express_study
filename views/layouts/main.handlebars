@@ -2,9 +2,16 @@
 <html>
 <head>
     <title>Meadowlark Travel</title>
+    {{{_sections.head}}}
 </head>
 <body>
-	<header><img src="/img/logo.png" alt="Medowlark Travel Logo"></header>
-    {{{body}}}
+	<div class="container">
+		<header><img src="/img/logo.png" alt="Medowlark Travel Logo"></header>
+    	{{{body}}} {{!HTML코드가 들어 가는곳, 이곳에 렌더링 한다.}}
+    	
+    	{{{_sections.jquery}}}
+
+    	<footer>&copy; {{copyrightYear}} Meadowlark Travel</footer>
+    </div>
 </body>
 </html>
